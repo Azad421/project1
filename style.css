@@ -1,0 +1,164 @@
+/*defult*/
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+body{
+	background: #190c0c;
+}
+
+img{
+	width:100%;
+	
+}
+/*heding*/
+header {
+	width:100%;
+    background: #291e1e;
+    overflow: hidden;
+	position:fixed;
+}
+span#logoImg{
+	text-transform:upercase;
+	font-size:30px;
+	font-family:Algerian;
+	text-align: center;
+	color: #8258a9;
+}
+div#logo{
+	width: 250px;
+	float:left;
+	overflow:hidden;
+	text-align: center;
+	line-height: 2;
+}
+ul#manuTable{
+	list-style:none;
+	
+}
+ul li{
+	float:left;
+	border-left: 1px solid #a58a8a;
+	transition:background 0.5s;
+	
+}
+ul li#menuLink{
+	border-right: 1px solid #a58a8a;
+	
+}
+ul li a{
+	color: #f9e3e3;
+	text-decoration:none;
+	text-transform:uppercase;
+	display:block;
+	padding: 21px 18px;	
+	position: relative;
+}
+
+ul li a:before{
+	content: "";
+	width: 100%;
+	height: 0;
+	background: tomato;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transition: 0.5s;
+	transform: scaleY(0);
+	transform-origin: bottom;
+	z-index: -1;
+}
+ul li:hover a:before{
+	height: 100%;
+	transform: scaleY(1);
+}
+
+/*border*/
+div.page-border-top{
+	height:10px;
+	width:100%;
+	background: #190c0c;
+	position:fixed;
+	top: 60px;
+}
+
+div.pge-border-left{
+	height:100%;
+	background: #190c0c;
+	position: fixed;
+	top: 70px;
+	width: 10px;
+}
+div.pge-border-right{
+	height: 100%;
+	width: 10px;
+	background: #190c0c;
+	position: fixed;
+	top: 70px;
+	right: 0;
+	z-index: 1;
+}
+div.pge-border-bottom{
+	height: 10px;
+	width:100%;
+	background:#151111;
+	position: fixed;
+	bottom:0px;
+}
+/*slider*/
+div#leftSlider{
+	position:fixed;
+	top:70px;
+	left:10px;
+	width:450px;
+	height:88%;
+	float:left;
+	overflow:hidden;
+}
+
+div#rightSlider{
+	width:450px;
+	height:88%;
+	position:fixed;
+	right:0px;
+	top:70px;
+	float:right;
+	overflow:hidden;
+}
+#sldrcntnr{
+	height:583px;
+}
+#sldrcntnr2{
+	height:583px;
+}
+#sldrcntnr img{
+	float:left;
+	height:100%;
+}
+#sldrcntnr2 img{
+	float:right;
+	height:100%;
+}
+/*container*/
+div#container{
+	background:black;
+	width: 32%;
+	height: 100%;
+	position: absolute;
+	top: 70px;
+	left: 463px;
+	color: wheat;
+	overflow: hidden;
+	z-index: -1;
+}
+div.subContainer{
+	background:black;
+	width: 90%;
+	padding:50px;
+	height: 100%;
+	position: relative;
+	
+	color: wheat;
+	overflow: hidden;
+}
